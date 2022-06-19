@@ -70,6 +70,7 @@ class ProductController extends AbstractController
             $result->execute();
 
             echo "Pronto, produto atualizado";
+            
         }
 
         $product = $con->prepare("SELECT * FROM tb_product WHERE id='{$id}'");
@@ -87,7 +88,7 @@ class ProductController extends AbstractController
         $result = $con->prepare("DELETE FROM tb_product WHERE id='{$id}'");
         $result->execute();
 
-        $message = "Pronto, produto excluído";
+        //$message = "Pronto, produto excluído";
 
         parent::renderMessage("Pronto, produto excluído");
     }

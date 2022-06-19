@@ -60,6 +60,6 @@ class CategoryController extends AbstractController
         $result = $con->prepare("DELETE FROM tb_category WHERE id='{$id}'");
         $result->execute();
 
-        echo "Pronto";
+        parent::renderMessage("Pronto, categoria excluída");
     }
 }

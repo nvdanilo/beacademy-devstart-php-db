@@ -1,1 +1,1 @@
-<h1>Página Inicial</h1>
+<h1>Bem vindo!</h1>
